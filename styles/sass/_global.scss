@@ -1,0 +1,92 @@
+// Colors
+$black: #2c2c2c;
+$darkGreyBlue: #285e64;
+$orangeyYellow: #f6a823;
+$grey: #4f4f4f;
+$accent: #05afc1;
+$rustRed: #a82706;
+$whiteShade: #f0efed;
+
+// Fonts
+@mixin loraFont($fontSizeLora){
+    font-family: 'Lora', serif;
+    font-size: $fontSizeLora;
+    letter-spacing: 0px;
+    color: $black;
+    line-height: 9.2rem;
+    text-transform: uppercase;
+}
+
+@mixin robRegFont(){
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    color: $black;
+    line-height: 3.2rem;
+}
+
+@mixin robFont($fontSize, $color){
+    font-family: 'Roboto', sans-serif;
+    font-size: $fontSize;
+    letter-spacing: 1px;
+    color: $color;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+// General selectors
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    @include robRegFont();
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    @include loraFont(15rem);
+}
+
+h2 {
+    @include loraFont(8rem);
+}
+
+h3 {
+    @include robFont(4.2rem, $black);
+}
+
+h4 {
+    @include robFont(3.2rem, $black);
+}
+
+h5 {
+    @include robFont(2.4rem, $black);
+}
+
+h6 {
+    @include robFont(2.4rem, rgb(246, 246, 246));
+}
+
+a, button {
+    @include robFont(2rem, $black);
+}
+
+// Button un menu pielikt line height!!!!!!!!!!!!
