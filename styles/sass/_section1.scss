@@ -1,0 +1,42 @@
+// First paragraph
+
+.about1 {
+    @include flexItemsAlign();
+    background-color: $whiteShade;
+    min-height: 500px;
+}
+
+// Second and Third paragraph
+
+.about2, .about3 {
+    min-height: 400px;
+}
+
+.about2{
+    @include flexItemsAlign(flex-end);
+}
+
+.about3{
+    @include flexItemsAlign(flex-start);
+}
+
+.text, .blogImg {
+    width: 50%;
+}
+
+.textPad2 {
+    padding-left: 80px;
+}
+
+.textPad3 {
+    padding-right: 80px;
+    text-align: right;
+}
+
+.about2 {
+    margin: -80px 0 50px;
+}
+
+.blogImgOne {
+    box-shadow: 20px 20px $rustRed, calc(50% - 570px) 0 $rustRed;
+}

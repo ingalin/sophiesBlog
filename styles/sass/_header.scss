@@ -1,0 +1,26 @@
+/* Header background */
+
+header {
+    background-color: $orangeyYellow;
+    min-height: 100vh;
+}
+
+// h1 and images
+.h1AndImages {
+    @include flexItemsAlign ();
+    position: relative;
+    min-height: 85vh;
+}
+
+.aboutImg {
+    position: absolute;
+    top: 30%
+}
+
+.mainImg {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    box-shadow: 20px 20px white;
+}
+

@@ -7,6 +7,7 @@ $accent: #05afc1;
 $rustRed: #a82706;
 $whiteShade: #f0efed;
 
+
 // Fonts
 @mixin loraFont($fontSizeLora){
     font-family: 'Lora', serif;
@@ -32,6 +33,12 @@ $whiteShade: #f0efed;
     color: $color;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+// Flexbox mixin
+@mixin flexItemsAlign($align: center) {
+    display: flex;
+    align-items: $align;
 }
 
 
@@ -61,8 +68,13 @@ img {
     display: block;
 }
 
+figure {
+    margin: 0;
+}
+
 h1 {
-    @include loraFont(15rem);
+    @include loraFont(14rem);
+    margin-left: 50px;
 }
 
 h2 {
@@ -85,8 +97,30 @@ h6 {
     @include robFont(2.4rem, rgb(246, 246, 246));
 }
 
-a, button {
+a, button, .spanNav {
     @include robFont(2rem, $black);
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 3px transparent solid; 
+}
+
+a, button {
+    background: $accent;
+}
+
+a:hover, a:focus {
+    background: $black;
+    border: 3px $accent solid; 
+    color: $whiteShade;
+}
+
+p {
+    margin: 30px 0 40px;
+}
+
+// NAV active page {
+.activeNav {
+    color: $whiteShade;
 }
 
 // Button un menu pielikt line height!!!!!!!!!!!!

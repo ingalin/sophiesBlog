@@ -10,61 +10,71 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">home</a>
-                </li>
-                <li>
-                    <a href="">about</a>
-                </li>
-                <li>
-                    <a href="">sophie</a>
-                </li>
-                <li>
-                    <a href="">blog</a>
-                </li>
-                <li>
-                    <a href="">contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <figure>
-                <img src="styles/assets/circle-text.png" alt="it's all about">
-            </figure>
-            <h1>sophie</h1>
-            <figure>
-                <img src="styles/assets/home-image-1.jpg" alt="photo of sophie holding oranges">
-            </figure>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href=""><span class="activeNav">home</span></a>
+                    </li>
+                    <li>
+                        <a href="">about</a>
+                    </li>
+                    <li>
+                        <span class="spanNav">sophie</span>
+                    </li>
+                    <li>
+                        <a href="">blog</a>
+                    </li>
+                    <li>
+                        <a href="">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="h1AndImages">
+                <figure class="aboutImg">
+                    <img src="styles/assets/circle-text.png" alt="it's all about">
+                </figure>
+                <h1>sophie</h1>
+                <figure class="mainImg">
+                    <img src="styles/assets/home-image-1.jpg" alt="photo of sophie holding oranges">
+                </figure>
+            </div>
         </div>
     </header>
     <main>
         <section>
-            <h3>who is sophie?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo fugiat nam soluta veritatis debitis quaerat aut rerum sed reiciendis eaque, voluptatem dolorum iusto consectetur sapiente pariatur veniam natus alias.</p>
-            <a href="">find out more</a>
-        </section>
-        <section>
             <ul>
-                <li>
-                    <figure>
-                        <img src="styles/assets/home-image-2.jpg" alt="photo of a dog in an orange car">
-                    </figure>
-                    <h4>sophie's favourite things</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo fugiat nam soluveritatis debitis quaerat
-                        aut rerum sed reiciendis eaque, voluptatem dolorum iusto consectetur sapiente pariatur veninatus alias.</p>
-                    <a href="">read more</a>
+                <li class="about1">
+                    <div class="wrapper">
+                        <h3>who is sophie?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo fugiat nam soluta veritatidebitis
+                            quaerat aut rerum sed reiciendis eaque, voluptatem dolorum iusto consectetur sapiente pariatur venianatus
+                            alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <a href="">find out more</a>
+                    </div>
                 </li>
-                <li>
-                    <h4>where she's travelled</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo fugiat soluveritatis debitis quaerat
-                        aut rerum sed reiciendis eaque, voluptatem dolorum iusto consectetur sapiente pariaveninatus alias.</p>
-                    <a href="">read more</a>
-                    <figure>
-                        <img src="styles/assets/home-image-3.jpg" alt="photo of orange umbrellas">
-                    </figure>
-                </li>
+                <div class="wrapper">
+                    <li class="about2">
+                        <figure class="blogImg blogImgOne">
+                            <img src="styles/assets/home-image-2.jpg" alt="photo of a dog in an orange car">
+                        </figure>
+                        <div class="text textPad2">
+                            <h4>sophie's favourite things</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo fugiat nam soluveritatis debitis quaerataut rerum sed reiciendis eaque, voluptatem dolorum iusto consectetur sapiente pariatur alias.</p>
+                            <a href="">read more</a>
+                        </div>
+                    </li>
+                    <li class="about3">
+                        <div class="text textPad3">
+                            <h4>where she's travelled</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo fugiat soluveritatis debitis quaerataut rerum sed reiciendis eaque, voluptatem dolorum iusto consectetur sapiente pariatur alias.</p>
+                            <a href="">read more</a>
+                        </div>
+                        <figure class="blogImg blogImgTwo">
+                            <img src="styles/assets/home-image-3.jpg" alt="photo of orange umbrellas">
+                        </figure>
+                    </li>
+                </div>
             </ul>
         </section>
         <section>
