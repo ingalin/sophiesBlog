@@ -41,6 +41,11 @@ $whiteShade: #f0efed;
     align-items: $align;
 }
 
+@mixin flexItemsJustify($justify: flex-start) {
+    display: flex;
+    justify-content: $justify;
+}
+
 
 // General selectors
 * {

@@ -14,29 +14,53 @@
 
 .about2{
     @include flexItemsAlign(flex-end);
+    margin-top: -70px;
 }
 
 .about3{
     @include flexItemsAlign(flex-start);
+    margin-top: 70px;
 }
 
 .text, .blogImg {
     width: 50%;
 }
 
+.text {
+    max-width: 570px;
+}
+
 .textPad2 {
-    padding-left: 80px;
+    padding-left: 75px;
+    margin-right: calc(50% - 570px);
+    padding-bottom: 10px;
 }
 
 .textPad3 {
-    padding-right: 80px;
+    padding-right: 95px;
+    margin-left: calc(50% - 570px);
     text-align: right;
-}
-
-.about2 {
-    margin: -80px 0 50px;
+    margin-top: -20px;
 }
 
 .blogImgOne {
-    box-shadow: 20px 20px $rustRed, calc(50% - 570px) 0 $rustRed;
+    @include flexItemsJustify(flex-end);
+    background-color: $rustRed;
+}
+
+.blogImgTwo {
+    @include flexItemsJustify();
+    background-color: $orangeyYellow;
+}
+
+.imgOne, .imgTwo {
+    max-width: 570px;
+}
+
+.imgOne {
+    margin: -20px 20px 20px calc(50% - 570px);
+}
+
+.imgTwo {
+    margin: -20px calc(50% - 570px) 20px -20px;
 }
