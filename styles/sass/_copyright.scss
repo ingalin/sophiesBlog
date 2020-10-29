@@ -1,0 +1,19 @@
+// Footer//Copyright
+.copyright {
+    background-color: $black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 100px;
+}
+
+.copyright a {
+    padding: 5px 10px;
+    @include robFont(2.4rem, rgb(246, 246, 246));
+    text-transform: none;
+    background-color: transparent;
+    border: transparent;
+}
+
+.copyright a:hover, .copyright a:focus {
+    color: $orangeyYellow;
+}

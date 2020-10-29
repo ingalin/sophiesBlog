@@ -3,9 +3,8 @@
 nav ul {
     @include flexItemsAlign(center);
     justify-content: center;
-    list-style: none;
     li {
-        margin: 0px 3px 20px;
+        margin: 0px 3px;
         a {
             line-height: 2.9rem;
             background: none;

@@ -1,0 +1,81 @@
+// Section 2 
+.section2 {
+    background-color: $whiteShade;
+    margin-top: -90px;
+}
+
+.firstGroup a {
+    background: none;
+    display: block;
+    width: calc(50% - 20px);
+    padding: 0;
+    padding: 20px 3px;
+    margin-top: 5px;
+}
+
+.firstGroup a:hover, .firstGroup a:focus {
+    background: $black;
+}
+
+.firstGroup a:hover p, .firstGroup a:focus p {
+    color: $whiteShade;
+}
+
+.firstGroup a:hover h5, .firstGroup a:focus h5 {
+    color: $whiteShade;
+}
+
+.firstGroup a:hover .iconStyle, .firstGroup a:focus .iconStyle {
+    background-color: $darkGreyBlue;
+}
+
+.firstGroup p {
+    @include robRegFont();
+    text-transform: none;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+}
+
+.firstGroup {
+    @include flexItemsJustify(space-between);
+    flex-wrap: wrap;
+    padding: 130px 0 90px 0;
+}
+
+.iconInfo {
+    @include flexItemsJustify(flex-start);
+}
+
+.iconStyle {
+    @include flexItemsAlign();
+    justify-content: center;
+    background-color: $orangeyYellow;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.iconText {
+    width: 90%;
+    margin: 10px 0 0 20px;
+}
+
+// Section 2 Group 2
+
+.secondGroup {
+    @include flexItemsJustify(space-between);
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.secondGroup div {
+    width: 70%;
+    padding: 0 0 110px 50px;
+}
+
+.secondGroup figure {
+    box-shadow: 20px 20px $orangeyYellow;
+}
+
+
+

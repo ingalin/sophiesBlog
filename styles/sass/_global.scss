@@ -77,6 +77,31 @@ figure {
     margin: 0;
 }
 
+a, button {
+    background: $accent;
+}
+
+a:hover, a:focus {
+    background: $black;
+    border: 3px $accent solid; 
+    color: $whiteShade;
+}
+
+a, button, .spanNav {
+    @include robFont(2rem, $black);
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 3px transparent solid; 
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 30px 0 40px;
+}
+
 h1 {
     @include loraFont(14rem);
     margin-left: 50px;
@@ -98,30 +123,9 @@ h5 {
     @include robFont(2.4rem, $black);
 }
 
-h6 {
-    @include robFont(2.4rem, rgb(246, 246, 246));
-}
-
-a, button, .spanNav {
-    @include robFont(2rem, $black);
-    text-decoration: none;
-    padding: 10px 30px;
-    border: 3px transparent solid; 
-}
-
-a, button {
-    background: $accent;
-}
-
-a:hover, a:focus {
-    background: $black;
-    border: 3px $accent solid; 
-    color: $whiteShade;
-}
-
-p {
-    margin: 30px 0 40px;
-}
+// h6 {
+//     @include robFont(2.4rem, rgb(246, 246, 246));
+// }
 
 // NAV active page {
 .activeNav {
