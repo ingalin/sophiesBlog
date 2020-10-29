@@ -272,7 +272,7 @@ a, button {
   background: #05afc1;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus {
   background: #2c2c2c;
   border: 3px #05afc1 solid;
   color: #f0efed;
@@ -653,4 +653,182 @@ h1 {
 h2 {
   position: absolute;
   bottom: -8%;
+}
+
+.mainBackground {
+  background-color: #f0efed;
+  padding: 100px 0;
+}
+
+.aboutMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutMain p {
+  margin: 15px 0 0 0;
+}
+
+.aboutMain h5 {
+  margin-top: 30px;
+}
+
+.mainBackground aside, .mainBackground article, .commentSection li {
+  background-color: white;
+  padding: 30px;
+}
+
+.asideNotes aside:last-child {
+  padding-top: 10px;
+}
+
+.asideNotes {
+  width: 30%;
+}
+
+.aboutSection {
+  width: calc(70% - 40px);
+}
+
+.highlight {
+  color: #285e64;
+}
+
+.asideNotes a {
+  background-color: transparent;
+  padding: 2px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  color: #2c2c2c;
+  line-height: 3.2rem;
+  text-transform: none;
+}
+
+.asideNotes aside:nth-child(2) {
+  margin-top: 30px;
+}
+
+aside ul {
+  padding: 20px 0 10px 10px;
+}
+
+aside li::before {
+  content: "\2022";
+  color: #f6a823;
+  font-weight: bold;
+  display: inline-block;
+  width: 2rem;
+}
+
+.aboutSection h4 {
+  margin-bottom: 20px;
+}
+
+time, .aboutSection .highlight, .italic {
+  font-style: italic;
+}
+
+.aboutSection .highlight {
+  font-weight: 700;
+}
+
+article, .commentSection {
+  border-bottom: #f6a823 5px solid;
+}
+
+.commentSection {
+  margin: 40px 0;
+}
+
+.commentSection li:nth-child(2) {
+  margin-top: 20px;
+}
+
+.commentSection li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentSection .comments {
+  width: calc(85% - 10px);
+}
+
+.commentSection figure {
+  width: 15%;
+}
+
+.comments p:first-child {
+  margin-top: 0;
+}
+
+/* Form */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+input, textarea {
+  padding: 30px 40px;
+  background: white;
+  border: none;
+  border: 3px transparent solid;
+}
+
+textarea {
+  height: 350px;
+  resize: none;
+  width: 100%;
+  padding-top: 50px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+input::placeholder, textarea::placeholder {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+input[type="email"], input[type="text"] {
+  margin-bottom: 20px;
+  width: calc(50% - 10px);
+}
+
+.submit {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 12px 40px;
+}
+
+.aboutFooter .copyright {
+  margin-top: 0;
 }

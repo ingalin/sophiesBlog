@@ -81,7 +81,7 @@ a, button {
     background: $accent;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus {
     background: $black;
     border: 3px $accent solid; 
     color: $whiteShade;
