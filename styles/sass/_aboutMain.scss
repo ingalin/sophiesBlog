@@ -1,3 +1,5 @@
+// About section
+
 .mainBackground {
     background-color: $whiteShade;
     padding: 100px 0;
@@ -5,10 +7,9 @@
 
 .aboutMain {
     @include flexItemsJustify(space-between);
-}
-
-.aboutMain p {
-    margin: 15px 0 0 0;
+    p {
+        margin: 15px 0 0 0;
+    }
 }
 
 .aboutMain h5 {
@@ -20,30 +21,29 @@
     padding: 30px;
 }
 
+// Aside notes
+
 .asideNotes aside:last-child {
     padding-top: 10px;
 }
 
 .asideNotes {
     width: 30%;
+    a {
+        background-color: transparent;
+        padding: 2px;
+        border: none;
+        @include robRegFont();
+        text-transform: none;
+    }
 }
 
 .aboutSection {
     width: calc(70% - 40px);
 }
 
-// Highlighted links
-
 .highlight {
     color: $darkGreyBlue;
-}
-
-.asideNotes a {
-    background-color: transparent;
-    padding: 2px;
-    border: none;
-    @include robRegFont();
-    text-transform: none;
 }
 
 .asideNotes aside:nth-child(2) {
@@ -52,11 +52,11 @@
 
 // Aside list
 
-aside ul {
+.asideAbout ul {
     padding: 20px 0 10px 10px;
 }
 
-aside li::before {
+.asideAbout li::before {
     content: "\2022";  
     color: $orangeyYellow; 
     font-weight: bold; 
@@ -84,67 +84,24 @@ article, .commentSection {
 
 .commentSection {
     margin: 40px 0;
+    li {
+        @include flexItemsJustify(space-between);
+    }
 }
 
 .commentSection li:nth-child(2 ){
     margin-top: 20px;
 }
 
-.commentSection li {
-    @include flexItemsJustify(space-between);
-}
-
 .commentSection .comments {
     width: calc(85% - 10px);
-}
-
-.commentSection figure {
-    width: 15%;
 }
 
 .comments p:first-child {
     margin-top: 0;
 }
 
-/* Form */
-
-form {
-    @include flexItemsJustify($justify: space-between);
-    flex-wrap: wrap;
-}
-
-input, textarea {
-    padding: 30px 40px;
-    background: white;
-    border: none; 
-    border: 3px transparent solid;
-}
-
-textarea {
-    height: 350px;
-    resize: none;
-    width: 100%;
-    padding-top: 50px;
-}
-
-input::placeholder, textarea::placeholder {
-    opacity: 0.7;
-    font-style: italic;
-}
-
-input[type="email"], input[type="text"] {
-    margin-bottom: 20px;
-    width: calc(50% - 10px);
-}
-
-.submit {
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    padding: 12px 40px;
-}
-
-// Copyright
+// Copyright about section
 
 .aboutFooter .copyright {
     margin-top: 0;

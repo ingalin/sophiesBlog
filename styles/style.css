@@ -270,6 +270,7 @@ figure {
 
 a, button {
   background: #05afc1;
+  line-height: 3.2rem;
 }
 
 a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus {
@@ -305,7 +306,7 @@ h1 {
   color: #2c2c2c;
   line-height: 9.2rem;
   text-transform: uppercase;
-  margin-left: 50px;
+  margin: 250px 0 0 50px;
 }
 
 h2 {
@@ -391,10 +392,6 @@ header {
 
 .h1AndImages {
   position: relative;
-}
-
-h1 {
-  margin-top: 250px;
 }
 
 .aboutImg {
@@ -528,17 +525,6 @@ h1 {
   background-color: #285e64;
 }
 
-.firstGroup p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0px;
-  color: #2c2c2c;
-  line-height: 3.2rem;
-  text-transform: none;
-  font-weight: 400;
-  margin: 20px 0 0 0;
-}
-
 .firstGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,6 +535,17 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 130px 0 90px 0;
+}
+
+.firstGroup p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  color: #2c2c2c;
+  line-height: 3.2rem;
+  text-transform: none;
+  font-weight: 400;
+  margin: 20px 0 0 0;
 }
 
 .iconInfo {
@@ -636,6 +633,7 @@ h1 {
   color: #f6f6f6;
   font-weight: 700;
   text-transform: uppercase;
+  font-weight: normal;
   text-transform: none;
   background-color: transparent;
   border: transparent;
@@ -690,14 +688,6 @@ h2 {
   width: 30%;
 }
 
-.aboutSection {
-  width: calc(70% - 40px);
-}
-
-.highlight {
-  color: #285e64;
-}
-
 .asideNotes a {
   background-color: transparent;
   padding: 2px;
@@ -710,15 +700,23 @@ h2 {
   text-transform: none;
 }
 
+.aboutSection {
+  width: calc(70% - 40px);
+}
+
+.highlight {
+  color: #285e64;
+}
+
 .asideNotes aside:nth-child(2) {
   margin-top: 30px;
 }
 
-aside ul {
+.asideAbout ul {
   padding: 20px 0 10px 10px;
 }
 
-aside li::before {
+.asideAbout li::before {
   content: "\2022";
   color: #f6a823;
   font-weight: bold;
@@ -746,10 +744,6 @@ article, .commentSection {
   margin: 40px 0;
 }
 
-.commentSection li:nth-child(2) {
-  margin-top: 20px;
-}
-
 .commentSection li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,15 +753,19 @@ article, .commentSection {
           justify-content: space-between;
 }
 
+.commentSection li:nth-child(2) {
+  margin-top: 20px;
+}
+
 .commentSection .comments {
   width: calc(85% - 10px);
 }
 
-.commentSection figure {
-  width: 15%;
+.comments p:first-child {
+  margin-top: 0;
 }
 
-.comments p:first-child {
+.aboutFooter .copyright {
   margin-top: 0;
 }
 
@@ -829,6 +827,42 @@ input[type="email"], input[type="text"] {
   padding: 12px 40px;
 }
 
-.aboutFooter .copyright {
-  margin-top: 0;
+.contact h5 {
+  text-transform: none;
+  margin-top: 10px;
+}
+
+.contact span {
+  display: block;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 30px 0 0 -18px;
+}
+
+.contact aside li {
+  padding: 2.5px;
+}
+
+.contact aside li a {
+  padding: 20px 18px 10px;
+}
+
+.contact i {
+  font-size: 2.5rem;
+  color: #f6a823;
+}
+
+.contact a:hover i, .contact a:focus i {
+  color: #285e64;
+}
+
+.contact a:hover, .contact a:focus {
+  border-bottom: #285e64 3px solid;
 }

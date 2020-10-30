@@ -12,12 +12,6 @@ nav ul {
     }
 }
 
-
-.headerNavigation span, .section2 span {
-    // text-decoration: underline #ffb100 2px;
-    // text-underline-offset: 1rem;
-}
-
 .spanNav {
     @include loraFont(4rem);
 }

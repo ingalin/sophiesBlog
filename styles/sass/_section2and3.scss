@@ -29,17 +29,16 @@
     background-color: $darkGreyBlue;
 }
 
-.firstGroup p {
-    @include robRegFont();
-    text-transform: none;
-    font-weight: 400;
-    margin: 20px 0 0 0;
-}
-
 .firstGroup {
     @include flexItemsJustify(space-between);
     flex-wrap: wrap;
     padding: 130px 0 90px 0;
+    p {
+        @include robRegFont();
+        text-transform: none;
+        font-weight: 400;
+        margin: 20px 0 0 0;
+    }
 }
 
 .iconInfo {
@@ -66,16 +65,25 @@
     @include flexItemsJustify(space-between);
     align-items: flex-start;
     margin-top: 100px;
-}
-
-.secondGroup div {
-    width: 70%;
-    padding: 0 0 110px 50px;
+    div {
+        width: 70%;
+        padding: 0 0 110px 50px;
+    }
 }
 
 .secondGroup figure {
     box-shadow: 20px 20px $orangeyYellow;
 }
 
+// Section 3
+.photos {
+    margin-top: 100px;
+    figure {
+    @include flexItemsJustify(space-between);
+        img {
+            max-width: 32%;
+        }
+    }
+}
 
 

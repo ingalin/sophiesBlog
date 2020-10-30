@@ -2,7 +2,7 @@
 $black: #2c2c2c;
 $darkGreyBlue: #285e64;
 $orangeyYellow: #f6a823;
-$grey: #4f4f4f;
+// $grey: #4f4f4f;
 $accent: #05afc1;
 $rustRed: #a82706;
 $whiteShade: #f0efed;
@@ -79,6 +79,7 @@ figure {
 
 a, button {
     background: $accent;
+    line-height: 3.2rem;
 }
 
 a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus {
@@ -104,7 +105,7 @@ p {
 
 h1 {
     @include loraFont(14rem);
-    margin-left: 50px;
+    margin: 250px 0 0 50px;
 }
 
 h2 {
@@ -123,13 +124,8 @@ h5 {
     @include robFont(2.4rem, $black);
 }
 
-// h6 {
-//     @include robFont(2.4rem, rgb(246, 246, 246));
-// }
-
 // NAV active page {
 .activeNav {
     color: $whiteShade;
 }
 
-// Button un menu pielikt line height!!!!!!!!!!!!

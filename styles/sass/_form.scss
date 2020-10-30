@@ -1,0 +1,37 @@
+/* Form */
+
+form {
+    @include flexItemsJustify($justify: space-between);
+    flex-wrap: wrap;
+}
+
+input, textarea {
+    padding: 30px 40px;
+    background: white;
+    border: none; 
+    border: 3px transparent solid;
+}
+
+textarea {
+    height: 350px;
+    resize: none;
+    width: 100%;
+    padding-top: 50px;
+}
+
+input::placeholder, textarea::placeholder {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+input[type="email"], input[type="text"] {
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+}
+
+.submit {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 12px 40px;
+}
