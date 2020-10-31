@@ -1,0 +1,178 @@
+// Media queries
+@media (max-width: 1266px) {
+    // Header
+    .mainHeader {
+        min-height: 560px;
+    }
+
+    .mainImg {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 13rem;
+    }
+
+    .aboutImg {
+        top: 19%;
+    }
+
+    // Section 1
+    h4 {
+        font-size: 2.9rem;
+    }
+
+    .textPad2 {
+        margin-right: 5%;
+    }
+
+    .textPad3 {
+        margin-left: 5%;
+    }
+
+    main {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1035px) {
+    // Header
+    .mainHeader {
+        min-height: 500px;
+    }
+
+    h1 {
+        font-size: 11rem;
+    }
+
+    .aboutImg {
+        top: 16%;
+    }
+
+    // Section 1
+
+    h4 {
+        font-size: 2.8rem;
+    }
+
+    .textPad2 {
+        padding-left: 30px;
+    }
+
+    .textPad3 {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    // Header
+
+    .h1AndImages {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 10rem;
+        margin-top: -20px;
+    }
+
+    .aboutImg {
+        top: 18%;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+
+    // Section 1
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    .about1 {
+        min-height: 400px;
+        padding: 70px 0 150px;
+    }
+
+    .about2, .about3 {
+        display: block;
+    }
+
+    .blogImg {
+        width: 100%;
+    }
+
+    .text {
+        max-width: 1140px;
+        width: 90%;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .textPad3 {
+        margin-bottom: 50px;
+    }
+
+    // Section 2
+    .section2 {
+        margin-top: 0;
+    }
+
+    .firstGroup {
+        padding: 20px 0;
+    }
+
+    .section2 a {
+        width: calc(50% - 5px);
+    }
+}
+
+@media (max-width: 800px) {
+    // Header
+
+    .mainHeader {
+        height: 65vh;
+    }
+
+    h1 {
+        font-size: 9rem;
+    }
+}
+
+@media (max-width: 730px) {
+    // Header
+    header {
+        padding-top: 30px;
+    }
+
+    .mainHeader {
+        height: 65vh;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    .aboutImg {
+        width: 25%;
+        top: 20%;
+    }
+
+    .spanNav {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    // Header
+    .mainHeader {
+        min-height: 350px;
+        height: 60vh;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+}

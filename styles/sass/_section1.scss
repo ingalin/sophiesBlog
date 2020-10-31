@@ -15,12 +15,12 @@
 
 .about2{
     @include flexItemsAlign(flex-end);
-    margin-top: -70px;
+    margin-top: -65px;
 }
 
 .about3{
     @include flexItemsAlign(flex-start);
-    margin-top: 70px;
+    margin-top: 65px;
 }
 
 .text, .blogImg {
