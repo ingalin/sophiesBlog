@@ -1139,8 +1139,7 @@ input[type="email"], input[type="text"] {
     border-bottom: none;
   }
   .mainHeader {
-    min-height: 700px;
-    height: 100vh;
+    min-height: 650px;
   }
   h1 {
     margin: 50px 0 0;
