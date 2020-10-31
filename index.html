@@ -12,21 +12,30 @@
     <header class="mainHeader" id="home">
         <div class="wrapper">
             <nav>
-                <ul>
+                <ul class="mobileMenu">
                     <li>
-                        <a href="#home"><span class="activeNav">home</span></a>
-                    </li>
-                    <li>
-                        <a href="#about">about</a>
-                    </li>
-                    <li>
-                        <span class="spanNav">sophie</span>
-                    </li>
-                    <li>
-                        <a href="blog.html">blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">contact</a>
+                        <!-- Button for mobile menu only -->
+                        <button>
+                            <i class="fas fa-bars" aria-hidden="true"></i>
+                            <span class="srOnly">Menu</span>
+                        </button>
+                        <ul class="mobileSubMenu">
+                            <li>
+                                <a href="#home"><span class="activeNav">home</span></a>
+                            </li>
+                            <li>
+                                <a href="#about">about</a>
+                            </li>
+                            <li class="middleList">
+                                <span class="spanNav">sophie</span>
+                            </li>
+                            <li>
+                                <a href="blog.html">blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">contact</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -134,7 +143,7 @@
                 </div>
                 <li>
                 <li>
-                    <img src="styles/assets/home-image-4.jpg" alt="photo of orange chairs">
+                    <img class="imageCenter" src="styles/assets/home-image-4.jpg" alt="photo of orange chairs">
                     <div class="secondGroup wrapper">
                         <figure>
                             <img src="styles/assets/home-image-5.jpg" alt="photo of Sophie">

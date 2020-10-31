@@ -61,6 +61,10 @@
 
 // Section 2 Group 2
 
+.imageCenter {
+    margin: 0 auto;
+}
+
 .secondGroup {
     @include flexItemsJustify(space-between);
     align-items: flex-start;
@@ -71,7 +75,7 @@
     }
 }
 
-.secondGroup figure {
+.secondGroup figure img {
     box-shadow: 20px 20px $orangeyYellow;
 }
 

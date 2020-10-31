@@ -349,6 +349,10 @@ h5 {
   color: #f0efed;
 }
 
+.mobileMenu button {
+  display: none;
+}
+
 /* Header navigation */
 nav ul {
   display: -webkit-box;
@@ -588,6 +592,10 @@ header {
   margin: 10px 0 0 20px;
 }
 
+.imageCenter {
+  margin: 0 auto;
+}
+
 .secondGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,7 +614,7 @@ header {
   padding: 0 0 110px 50px;
 }
 
-.secondGroup figure {
+.secondGroup figure img {
   -webkit-box-shadow: 20px 20px #f6a823;
           box-shadow: 20px 20px #f6a823;
 }
@@ -973,15 +981,6 @@ input[type="email"], input[type="text"] {
   }
 }
 
-@media (max-width: 800px) {
-  .mainHeader {
-    height: 65vh;
-  }
-  h1 {
-    font-size: 9rem;
-  }
-}
-
 @media (max-width: 730px) {
   header {
     padding-top: 30px;
@@ -999,14 +998,179 @@ input[type="email"], input[type="text"] {
   .spanNav {
     display: none;
   }
+  .imgTwo {
+    margin: 20px calc(50% - 570px) -20px 20px;
+  }
+  .firstGroup {
+    display: block;
+  }
+  .firstGroup a {
+    width: 100%;
+  }
+  .firstGroup a p {
+    margin-top: 10px;
+  }
+  .secondGroup {
+    display: block;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .secondGroup div {
+    width: 100%;
+    padding: 20px 0 30px;
+  }
+  .secondGroup figure {
+    margin: -100px 0 10px;
+  }
+  .imageCenter {
+    max-width: 180%;
+  }
+  .photos {
+    margin: 30px auto 0;
+  }
+  .photos figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .photos figure img {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .copyright a {
+    font-size: 1.8rem;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 570px) {
+  /* Navigation menu */
+  .mobileMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .mobileMenu button {
+    color: #2c2c2c;
+    display: block;
+    border: none;
+    background: none;
+    padding: 5px 100px 5px 20px;
+    border: 3px solid transparent;
+  }
+  .mobileMenu button i {
+    font-size: 4rem;
+  }
+  .mobileMenu li {
+    position: relative;
+  }
+  .mobileMenu li a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #f0efed;
+  }
+  .mobileMenu button:focus-within {
+    background-color: #2c2c2c;
+    border: 3px #f0efed solid;
+  }
+  .mobileMenu button:focus-within i {
+    color: #f0efed;
+  }
+  ul.mobileSubMenu {
+    background: #2c2c2c;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .mobileMenu li:focus-within ul.mobileSubMenu {
+    display: block;
+  }
+  .mobileSubMenu li {
+    display: block;
+    margin: 0;
+    border: 3px solid #f0efed;
+  }
+  ul.mobileSubMenu li a {
+    width: 100%;
+    margin: 0;
+  }
+  .mobileSubMenu li:focus-within a {
+    color: #f6a823;
+  }
+  .mobileSubMenu .activeNav {
+    color: #05afc1;
+  }
+  .mobileMenu li:focus-within .middleList {
+    display: none;
+  }
+  .mobileMenu li:focus-within li:nth-child(2), .mobileMenu li:focus-within li:nth-child(5) {
+    border-top: none;
+  }
+  .mobileMenu li:focus-within li:nth-child(2) {
+    border-bottom: none;
+  }
   .mainHeader {
-    min-height: 350px;
-    height: 60vh;
+    min-height: 700px;
+    height: 100vh;
   }
   h1 {
-    font-size: 6rem;
+    margin: 50px 0 0;
+  }
+  .h1AndImages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    margin: 0;
+  }
+  .h1AndImages .mainImg {
+    width: 60%;
+    margin: 0;
+  }
+  .aboutImg {
+    top: 79%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 470px) {
+  .aboutImg {
+    top: 76%;
+    left: 5%;
+    width: 30%;
+  }
+  .imageCenter {
+    max-width: 250%;
   }
 }
