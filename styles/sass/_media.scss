@@ -63,11 +63,51 @@
     .textPad3 {
         padding-right: 50px;
     }
+
+    // BLOG PAGE
+
+    .aboutMain {
+        display: block;
+    }
+
+    .asideNotes {
+        display: flex;
+        @include flexItemsJustify(space-between);
+        width: 100%;
+        margin-bottom: 30px;
+        .asideAbout {
+            width: calc(50% - 15px);
+        }
+    }
+
+    .asideNotes aside:nth-child(2) {
+        margin-top: 0;
+    }
+
+    aside img {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .aboutSection {
+        width: 100%;
+    }
+
+    // CONTACT PAGE 
+
+    .contact aside {
+        width: 100%;
+    }
+
+    // Form
+    input[type="email"], input[type="text"] {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 850px) {
     // Header
-
     .h1AndImages {
         margin-top: 50px;
     }
@@ -127,6 +167,14 @@
     .section2 a {
         width: calc(50% - 5px);
     }
+
+    // BLOG PAGE
+
+    .blogBackground {
+        background-size: cover;
+        background-position: 70%;
+    }
+
 }
 
 @media (max-width: 730px) {
@@ -209,26 +257,33 @@
         font-size: 1.8rem;
     }
 
-    //ABOUT SECTION
+    // BLOG PAGE & CONTACT PAGE
 
-    .blogPageImg {
-        max-width: 125%;
-        display: inline;
-        float: left;
+    .pageBackground {
+        margin-top: 25px;
     }
 
-    .blogHeader {
-        position: relative;
+    // BLOG PAGE aside notes 
+
+    .asideNotes {
+        display: block;
     }
 
-.blogHeader figure  {
-    // width: 150%;
-    // padding-left: -100px;
-    // margin-right: 300px;
-    // position: absolute;
-    right: 0;
-    // z-index: -1;
-}
+    .asideNotes .asideAbout {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    // BLOG PAGE comments
+    .commentSection li {
+        display: block;
+    }
+
+    .commentSection .comments {
+        width: 100%;
+    }
+
+
 }
 
 @media (max-width: 570px) {
@@ -281,6 +336,7 @@
 
     .mobileMenu li:focus-within ul.mobileSubMenu {
         display: block;
+        z-index: 2;
     }
 
     .mobileSubMenu li {
@@ -339,6 +395,7 @@
         top: 79%;
         left: 15%;
     }
+
 }
 
 @media (max-width: 470px) {

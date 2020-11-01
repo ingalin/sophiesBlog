@@ -1,9 +1,19 @@
 .headerPages {
     min-height: 200px;
-    position: relative;
 }
 
 h2 {
-    position: absolute;
-    bottom: -8%
+    margin-bottom: -85px;
+}
+
+.pageBackground {
+    @include flexItemsAlign(flex-end);
+}
+
+.pageBackground {
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    background-position: center center;
+    padding-bottom: 50px;
 }
