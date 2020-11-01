@@ -123,13 +123,3 @@ h4 {
 h5 {
     @include robFont(2.4rem, $black);
 }
-
-// NAV active page 
-.activeNav {
-    color: $whiteShade;
-}
-
-.mobileMenu button {
-    display: none;
-}
-

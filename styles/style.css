@@ -344,7 +344,6 @@ h5 {
   display: none;
 }
 
-/* Header navigation */
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,7 +699,7 @@ header {
   text-transform: none;
 }
 
-.aboutSection {
+.rightSection {
   width: calc(70% - 40px);
 }
 
@@ -724,15 +723,15 @@ header {
   width: 2rem;
 }
 
-.aboutSection h4 {
+.rightSection h4 {
   margin-bottom: 20px;
 }
 
-time, .aboutSection .highlight, .italic {
+time, .rightSection .highlight, .italic {
   font-style: italic;
 }
 
-.aboutSection .highlight {
+.rightSection .highlight {
   font-weight: 700;
 }
 
@@ -769,7 +768,6 @@ article, .commentSection {
   margin-top: 0;
 }
 
-/* Form */
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,7 +965,7 @@ h2 {
     margin: 0 auto;
     width: 60%;
   }
-  .aboutSection {
+  .rightSection {
     width: 100%;
   }
   .contact aside {
@@ -975,6 +973,9 @@ h2 {
   }
   input[type="email"], input[type="text"] {
     width: 100%;
+  }
+  input, textarea {
+    padding: 20px;
   }
 }
 

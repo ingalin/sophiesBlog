@@ -1,4 +1,13 @@
-/* Header navigation */
+// Header navigation 
+
+// NAV active page 
+.activeNav {
+    color: $whiteShade;
+}
+
+.mobileMenu button {
+    display: none;
+}
 
 nav ul {
     @include flexItemsAlign(center);
@@ -16,4 +25,3 @@ nav ul {
     @include loraFont(4rem);
 }
 
-// Form pievienot active: state !!!!! pie focus

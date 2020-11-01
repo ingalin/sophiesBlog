@@ -42,7 +42,7 @@
     }
 }
 
-.aboutSection {
+.rightSection {
     width: calc(70% - 40px);
 }
 
@@ -70,15 +70,15 @@
 
 // Main section
 
-.aboutSection h4 {
+.rightSection h4 {
     margin-bottom: 20px;
 }
 
-time, .aboutSection .highlight, .italic {
+time, .rightSection .highlight, .italic {
     font-style: italic;
 }
 
-.aboutSection .highlight {
+.rightSection .highlight {
     font-weight: 700;
 }
 

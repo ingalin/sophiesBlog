@@ -89,7 +89,7 @@
         width: 60%;
     }
 
-    .aboutSection {
+    .rightSection {
         width: 100%;
     }
 
@@ -104,6 +104,9 @@
         width: 100%;
     }
 
+    input, textarea {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -126,7 +129,6 @@
     }
 
     // Section 1
-
     h3 {
         font-size: 3.5rem;
     }
@@ -174,7 +176,6 @@
         background-size: cover;
         background-position: 70%;
     }
-
 }
 
 @media (max-width: 730px) {
@@ -201,7 +202,6 @@
     }
 
     // Section 1 part 3
-
     .imgTwo {
         margin: 20px calc(50% - 570px) -20px 20px;
     }
@@ -282,13 +282,11 @@
     .commentSection .comments {
         width: 100%;
     }
-
 }
 
 @media (max-width: 570px) {
 
     /* Navigation menu */
-
     .mobileMenu {
         @include flexItemsJustify();
         button {
@@ -379,7 +377,6 @@
     }
 
     // Text & images
-
     .h1AndImages {
         flex-direction: column;
         flex-flow: column-reverse;
@@ -394,7 +391,6 @@
         top: 79%;
         left: 15%;
     }
-
 }
 
 @media (max-width: 470px) {
