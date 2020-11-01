@@ -186,7 +186,7 @@
         margin: -100px 0 10px;
     }
 
-    .imageCenter {
+    .resizeImg{
         max-width: 180%;
     }
 
@@ -208,7 +208,29 @@
     .copyright a {
         font-size: 1.8rem;
     }
+
+    //ABOUT SECTION
+
+    .blogPageImg {
+        max-width: 125%;
+        display: inline;
+        float: left;
+    }
+
+    .blogHeader {
+        position: relative;
+    }
+
+.blogHeader figure  {
+    // width: 150%;
+    // padding-left: -100px;
+    // margin-right: 300px;
+    // position: absolute;
+    right: 0;
+    // z-index: -1;
 }
+}
+
 @media (max-width: 570px) {
 
     /* Navigation menu */
@@ -326,7 +348,7 @@
         width: 30%;
     }
 
-    .imageCenter {
+    .resizeImg {
         max-width: 250%;
     }
 }

@@ -299,6 +299,12 @@ p {
   margin: 30px 0 40px;
 }
 
+header figure {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 25px;
+}
+
 h1 {
   font-family: 'Lora', serif;
   font-size: 14rem;
@@ -1034,7 +1040,7 @@ input[type="email"], input[type="text"] {
   .secondGroup figure {
     margin: -100px 0 10px;
   }
-  .imageCenter {
+  .resizeImg {
     max-width: 180%;
   }
   .photos {
@@ -1061,6 +1067,17 @@ input[type="email"], input[type="text"] {
   }
   .copyright a {
     font-size: 1.8rem;
+  }
+  .blogPageImg {
+    max-width: 125%;
+    display: inline;
+    float: left;
+  }
+  .blogHeader {
+    position: relative;
+  }
+  .blogHeader figure {
+    right: 0;
   }
 }
 
@@ -1169,7 +1186,7 @@ input[type="email"], input[type="text"] {
     left: 5%;
     width: 30%;
   }
-  .imageCenter {
+  .resizeImg {
     max-width: 250%;
   }
 }
